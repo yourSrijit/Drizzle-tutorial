@@ -1,1 +1,1 @@
-# Drizzle-tutorial-wds
+# Drizzle tutorial Webdev Simplified
