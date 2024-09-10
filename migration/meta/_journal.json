@@ -8,6 +8,13 @@
       "when": 1725970947482,
       "tag": "0000_steep_ulik",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1725972783514,
+      "tag": "0001_smart_spot",
+      "breakpoints": true
     }
   ]
 }

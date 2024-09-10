@@ -1,6 +1,7 @@
 const { pgTable, serial, text, varchar, boolean, timestamp } = require("drizzle-orm/pg-core");
 
 const TodoTable=pgTable("Todo",{
+    id:serial("id").primaryKey(),
     title:text("title").notNull(),
     desc:varchar("desc",{length:255}).notNull(),
     isComplete:boolean("isComplete").default(false),
