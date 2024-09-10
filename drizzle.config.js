@@ -6,6 +6,6 @@ module.exports =defineConfig({
     out:"./migration",
     schema: "./schema.js",
    dbCredentials:{
-    url:process.env.DB_URL
+    url:process.env.POSTGRES_URL
    }
   })
