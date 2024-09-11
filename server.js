@@ -17,12 +17,21 @@ app.get("/",async(req,res)=>{
     //     desc:"Today i will definitly go for moring walk.This is my duety"
     // })
     // const todos=await db.insert(TodoTable).values(item).returning()
+    
+        // 2. Update 
+        const data=await db.update(TodoTable).set({
+            isComplete:true
+        }).where(eq(TodoTable.id,1));
+        if(data){
+            console.log("Update successful");
+            
+        }
 
-    // 2. Get data 
-    const todos=await db.select({
-        title:TodoTable.title,
-        desc:TodoTable.desc
-    }).from(TodoTable).where(eq(TodoTable.id,1))
+    // 3. Get data 
+    const todos=await db.select().from(TodoTable).where(eq(TodoTable.id,1))
+
+
+
     return res.send({
         message:
         todos

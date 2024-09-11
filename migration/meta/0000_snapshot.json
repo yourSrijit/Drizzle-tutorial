@@ -1,5 +1,5 @@
 {
-  "id": "b793a21d-2b54-4870-9ad5-78237193147f",
+  "id": "16692df9-f293-4d87-a3fe-0f3aaf732012",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "7",
   "dialect": "postgresql",
@@ -8,6 +8,12 @@
       "name": "Todo",
       "schema": "",
       "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
         "title": {
           "name": "title",
           "type": "text",
